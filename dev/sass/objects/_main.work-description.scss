@@ -1,0 +1,21 @@
+.work-description{
+
+    &__heading{
+        font-size: 0;
+        position: absolute;
+    }
+
+    &__content{
+        margin: 0 auto;
+    }
+
+    &__figure{
+        margin: $paddingMainContainer auto;
+        max-width: $widthImgProject;
+    }
+
+    &__img{
+        width: 100%;
+        height: auto;
+    }
+}

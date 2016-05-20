@@ -1,0 +1,18 @@
+.header.project-page,.header.projects-page,.header.contact-page{
+
+    .navigation{
+        a{
+            color: $navigationLinkHover;
+            background-color: $linkColor;
+
+            &:hover,&:active,&:focus,&.current{
+                color: $linkColor;
+                background-color: $navigationLinkHover;
+            }
+        }
+
+        &__elt{
+            border-color: $navigationLinkHover;
+        }
+    }
+}

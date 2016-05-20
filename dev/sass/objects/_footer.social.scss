@@ -1,0 +1,11 @@
+.social{
+    display: inline-block;
+
+    &__elt{
+        margin-left: 6rem;
+    }
+
+    a+a{
+        margin-top: 1rem;
+    }
+}

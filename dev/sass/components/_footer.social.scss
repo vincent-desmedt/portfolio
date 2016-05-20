@@ -1,0 +1,33 @@
+.social{
+    vertical-align: top;
+
+    &__elt{
+        padding: 1.9rem;
+    }
+
+    a{
+        color: $linkColor;
+        font-size: 1.6rem;
+        font-weight: 300;
+
+        &:before{
+            vertical-align: -25%;
+            padding-right: 1rem;
+            font: 3.6rem $glyphs;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        &.social__link--google:before{
+            content: "";
+        }
+
+        &.social__link--dribble:before{
+            content: "";
+        }
+
+        &.social__link--github:before{
+            content: "";
+        }
+    }
+}

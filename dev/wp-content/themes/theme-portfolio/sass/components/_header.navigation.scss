@@ -1,0 +1,148 @@
+.navigation{
+
+    &__list{
+        float: right;
+        max-width: 32.6rem;
+
+        &:after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+    }
+
+    a{
+
+        &:hover,&:active,&:focus,&.current{
+            text-decoration: none;
+            background-color: $linkColor;
+            color: $navigationLinkHover;
+        }
+    }
+
+    &__heading{
+        font-size: 0;
+        position: absolute;
+    }
+
+    &__elt{
+        float: left;
+        text-align: center;
+        border: 0.2rem solid $linkColor;
+
+        &:nth-child(even){
+            border-left: none;
+        }
+
+        &:nth-child(n+3){
+            border-top: none;
+        }
+
+        &:last-child{
+            float: right;
+        }
+    }
+
+    &__link{
+        display: table-cell;
+        min-width: 16rem;
+        height: 16rem;
+        vertical-align: middle;
+
+        &.home:before{
+            display: block;
+            content: "A";
+            font-size: 4.8rem;
+            font-weight: 500;
+        }
+
+        &.projects:before{
+            display: block;
+            content: "P";
+            font-size: 4.8rem;
+            font-weight: 500;
+        }
+
+        &.contact:before{
+            display: block;
+            content: "C";
+            font-size: 4.8rem;
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .navigation{
+
+        &__list{
+            float: none;
+            max-width: 100%;
+            position: absolute;
+            top: -101%;
+            height: 100vh;
+        }
+
+        &__label-burger{
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 0;
+
+            &:before{
+                display: block;
+                font: 4.8rem "Glyphs";
+                content: "";
+                color: $linkColor;
+                padding: 2.4rem;
+                cursor: pointer;
+            }
+        }
+
+        &__input-burger{
+            position: absolute;
+            left: -101%;
+            top: -101%;
+        }
+
+        &__input-burger:checked+&__list{
+            background-color: $textColor;
+            position: absolute;
+            top: 0%;
+        }
+
+        &__elt{
+            float: none;
+            text-align: center;
+            border: none;
+            line-height: 15vh;
+
+            &:first-of-type{
+                margin-top: 22.5vh;
+            }
+
+            &:last-child{
+                float: none;
+            }
+        }
+
+        &__link{
+            display: block;
+            text-align: center;
+            min-width: 100vw;
+            height: auto;
+
+            &.home:before{
+                display: none;
+            }
+
+            &.projects:before{
+                display: none;
+            }
+
+            &.contact:before{
+                display: none;
+            }
+        }
+    }
+}

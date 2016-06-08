@@ -1,0 +1,20 @@
+.work-description{
+
+    a{
+        font-size: 1.6rem;
+        text-decoration: underline;
+        color: $textColor;
+    }
+
+    a.work-description__link{
+        color: $textColor;
+        background-color: $linkColor;
+        border: 0.2rem solid $textColor;
+
+        &:hover,&:active,&:focus{
+            color: $linkColor;
+            background-color: $textColor;
+            text-decoration: none;
+        }
+    }
+}

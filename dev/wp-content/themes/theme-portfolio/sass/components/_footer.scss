@@ -1,0 +1,30 @@
+.footer{
+    background-color: $textColor;
+    color: $linkColor;
+    padding: 2rem 0 2rem 16.66666666666667%;
+
+    p{
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 971px) {
+    .footer{
+        background-color: $textColor;
+        color: $linkColor;
+        padding: 0;
+
+        h2{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer{
+
+        h2{
+            text-align: left;
+        }
+    }
+}

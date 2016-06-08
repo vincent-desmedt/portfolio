@@ -1,0 +1,14 @@
+.works{
+    padding: $paddingMainContainer;
+
+    h2{
+        font-size: 0;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .works{
+        padding: 0;
+    }
+}

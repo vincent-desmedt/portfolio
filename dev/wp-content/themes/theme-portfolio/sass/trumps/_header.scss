@@ -1,0 +1,80 @@
+.header.project-page,.header.projects-page,.header.contact-page{
+
+    h1{
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        color: $contrastColor;
+        background: none;
+
+        &:before,&:after{
+            content: "";
+            background-color: $contrastColor;
+            display: block;
+            height: 0.48rem;
+            width: 15vh;
+            margin: 0 auto;
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+
+            -webkit-animation: opacity 1s;
+            -moz-animation: opacity 1s;
+            -o-animation: opacity 1s;
+            animation: opacity 1s;
+
+            @-webkit-keyframes opacity {
+              0%   { opacity: 0; }
+              100% { opacity: 1; }
+            }
+            @-moz-keyframes opacity {
+              0%   { opacity: 0; }
+              100% { opacity: 1; }
+            }
+            @-o-keyframes opacity {
+              0%   { opacity: 0; }
+              100% { opacity: 1; }
+            }
+            @keyframes opacity {
+              0%   { opacity: 0; }
+              100% { opacity: 1; }
+            }
+        }
+
+        &:before{
+            margin-bottom: 10rem;
+            margin-bottom: 10vh;
+        }
+
+        &:after{
+            margin-top: 10rem;
+            margin-top: 10vh;
+        }
+    }
+}
+
+.project-page,.projects-page{
+    background: none;
+}
+
+.contact-page{
+    background: linear-gradient(0deg, rgba(29,29,27,0.6), rgba(29,29,27,0.6)), url(../assets/img/contact-cover.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .header.project-page,.header.projects-page,.header.contact-page{
+        h1{
+            font-size: 2.2rem;
+            font-size: 8vw;
+        }
+    }
+}

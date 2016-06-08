@@ -1,0 +1,67 @@
+.form{
+    font-size: 1.6rem;
+    padding: $paddingMainContainer 0 10%;
+    background-color: $descriptionColor;
+
+    &__elt{
+        border-bottom: 0.2rem solid $contrastColor;
+    }
+
+    &__elt:last-child{
+        border: none;
+
+        label{
+            font-size: 0;
+            position: absolute;
+        }
+
+        input{
+            padding: 2rem;
+            background-color: $contrastColor;
+            border: none;
+            font: normal 1.6rem $roboto;
+            letter-spacing: .5em;
+            cursor: pointer;
+            font-weight: 500;
+            color: white;
+        }
+    }
+
+    &__label{
+        padding-left: 2rem;
+        text-transform: uppercase;
+        letter-spacing: .5em;
+    }
+
+    &__input{
+        font: normal 1.6rem $roboto;
+        background-color: $descriptionColor;
+        padding: 2rem;
+        border: none;
+    }
+
+    &__textarea{
+        font: normal 1.6rem $roboto;
+        resize: none;
+        font-size: 1.6rem;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.4);
+        border: none;
+    }
+}
+
+::-webkit-input-placeholder {
+   color: $contrastColor;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $contrastColor;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $contrastColor;
+}
+
+:-ms-input-placeholder {
+   color: $contrastColor;
+}

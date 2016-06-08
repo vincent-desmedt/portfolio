@@ -1,0 +1,36 @@
+.work-description{
+
+    &__heading{
+        font-size: 0;
+        position: absolute;
+    }
+
+    &__content{
+        margin: 0 auto;
+    }
+
+    &__img{
+        display: block;
+        margin: $paddingMainContainer auto;
+        max-width: $widthImgProject;
+        width: 100%;
+        height: auto;
+    }
+
+    a.work-description__link{
+        display: block;
+        text-align: center;
+        margin: 0 auto 10%;
+        padding: $paddingArticleLink;
+        max-width: 15em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .work-description{
+
+        a.work-description__link{
+            max-width: 75%;
+        }
+    }
+}

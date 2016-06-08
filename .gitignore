@@ -47,3 +47,11 @@ Temporary Items
 .apdisk
 
 node_modules
+mdp.txt
+dev/*
+!dev/wp-content/
+dev/wp-content/*
+!dev/wp-content/themes/
+dev/wp-content/themes/*
+!dev/wp-content/themes/theme-portfolio
+dev/wp-content/themes/theme-portfolio/node_modules

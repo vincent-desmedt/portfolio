@@ -1,0 +1,27 @@
+.contact{
+    display: inline-block;
+}
+
+@media screen and (max-width: 971px) {
+    .contact{
+        display: block;
+        max-width: 360px;
+        margin: 0 auto;
+
+        p{
+            padding: 2.4rem 0;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contact{
+        display: block;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    p{
+        margin-left: 2.4rem;
+    }
+}

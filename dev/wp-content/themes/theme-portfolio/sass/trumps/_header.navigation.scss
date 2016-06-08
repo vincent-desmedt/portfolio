@@ -1,0 +1,40 @@
+.header.project-page,.header.projects-page{
+
+    .navigation{
+        a{
+            color: $navigationLinkHover;
+            background-color: $linkColor;
+
+            &:hover,&:active,&:focus,&.current{
+                color: $linkColor;
+                background-color: $navigationLinkHover;
+            }
+        }
+
+        &__elt{
+            border-color: $navigationLinkHover;
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+.header.project-page,.header.projects-page{
+    .navigation{
+        &__label-burger.projets,&__label-burger.projet{
+            &:before{
+                color: $textColor;
+            }
+        }
+
+        a{
+            color: $linkColor;
+            background-color: $textColor;
+
+            &:hover,&:active,&:focus,&.current{
+                color: $textColor;
+                background-color: $linkColor;
+            }
+        }
+    }
+}
+}
